@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athlete's Bridge | Enterprise Sports Science</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="ticker-wrap">
+        <div class="ticker">
+            <span class="ticker-item"><i class="fa-solid fa-heart-pulse"></i> AVG HRV: 72ms</span>
+            <span class="ticker-item"><i class="fa-solid fa-bolt"></i> PEAK ACCEL: 4.2g</span>
+            <span class="ticker-item"><i class="fa-solid fa-droplet"></i> HYDRATION: 88%</span>
+            <span class="ticker-item"><i class="fa-solid fa-person-running"></i> LOAD SCORE: 742</span>
+            <span class="ticker-item"><i class="fa-solid fa-wind"></i> VO2 MAX: 64.2</span>
+            <span class="ticker-item"><i class="fa-solid fa-heart-pulse"></i> AVG HRV: 72ms</span>
+            <span class="ticker-item"><i class="fa-solid fa-bolt"></i> PEAK ACCEL: 4.2g</span>
+        </div>
+    </div>
+
+    <nav id="navbar">
+        <div class="logo-container">
+    <a href="#home">
+        <img src="https://i.postimg.cc/BQ59295s/Chat-GPT-Image-Mar-12-2026-06-33-42-PM.png" alt="Athlete's Bridge Logo" class="site-logo">
+    </a>
+    <div class="logo-text">ATHLETE'S <span>BRIDGE</span></div>
+</div>
+        <ul class="nav-links">
+            <li><a href="#home">Command</a></li>
+            <li><a href="#dashboard">The Lab</a></li>
+            <li><a href="#features">Intelligence</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            <button id="connect-hrm" class="btn-primary"><i class="fa-brands fa-bluetooth-b"></i> Initialize Sync</button>
+        </div>
+    </nav>
+
+    <main class="enterprise-container">
+        
+        <section id="home" class="hero-module">
+            <canvas id="particle-canvas"></canvas>
+            <div class="module-card hero-card" data-tilt>
+                <div class="card-inner">
+                    <div class="badge-row">
+                        <span class="status-pulse"></span>
+                        <span class="badge">Biometric Sync Active</span>
+                    </div>
+                    <h1>QUANTIFY <span class="highlight">ATHLETICISM</span></h1>
+                    <p>The definitive enterprise bridge between high-frequency biometric telemetry and professional sports science consulting.</p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary large">Connect Gear</button>
+                        <button class="btn-secondary large"><i class="fa-solid fa-play"></i> View Technical Specs</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dashboard" class="module-section reveal">
+            <div class="module-card dashboard-card">
+                <div class="module-header">
+                    <div class="header-text">
+                        <h2>01 // ANALYTIC LAB</h2>
+                        <p>Real-time kinetic forecasting and CNS load monitoring.</p>
+                    </div>
+                    <span class="live-indicator">LIVE TELEMETRY</span>
+                </div>
+                
+                <div class="mock-dashboard">
+                    <div class="dash-sidebar">
+                        <div class="user-avatar"></div>
+                        <div class="skeleton-line"></div>
+                        <div class="skeleton-line short"></div>
+                        <div class="sidebar-stats">
+                            <div class="mini-tag">ACTIVE</div>
+                            <div class="mini-tag blue">PRO TIER</div>
+                        </div>
+                    </div>
+                    <div class="dash-main">
+                        <div class="chart-box">
+                            <canvas id="mockChart"></canvas>
+                        </div>
+                        <div class="stats-grid">
+                           <div id="kinematic-container" style="height: 200px; width: 100%; border-radius: 12px; background: rgba(0,0,0,0.2); overflow: hidden; position: relative; border: 1px solid var(--glass-border);">
+                           <span style="position: absolute; top: 10px; left: 10px; font-size: 0.7rem; color: var(--cyan); font-family: var(--font-heading);">3D KINEMATIC LOAD</span>
+                           </div>
+                            <div class="mini-stat">
+                                <span>Explosive Power</span>
+                                <strong>842W</strong>
+                                <div class="stat-trend up">+12%</div>
+                            </div>
+                            <div class="mini-stat">
+                                <span>Fatigue Level</span>
+                                <strong class="warning">High</strong>
+                                <div class="stat-trend down">Critical</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="module-section reveal">
+            <div class="module-header center">
+                <h2>02 // INTELLIGENCE MATRIX</h2>
+            </div>
+            <div class="feature-matrix">
+                <div class="matrix-card" data-tilt>
+                    <i class="fa-solid fa-microchip"></i>
+                    <h3>Neural Integration</h3>
+                    <p>Syncing neural fatigue markers with physical output in real-time to optimize training windows.</p>
+                </div>
+                <div class="matrix-card" data-tilt>
+                    <i class="fa-solid fa-shield-virus"></i>
+                    <h3>Injury Mitigation</h3>
+                    <p>Predictive biomechanical modeling used to reduce soft-tissue risks by up to 40% annually.</p>
+                </div>
+                <div class="matrix-card" data-tilt>
+                    <i class="fa-solid fa-network-wired"></i>
+                    <h3>Unified Protocol</h3>
+                    <p>Standardizing data from 15+ wearable manufacturers into one clinical-grade data stream.</p>
+                </div>
+            </div>
+        </section>
+
+
+<section id="workflow" class="module-section reveal">
+            <div class="module-header center">
+                <h2>03 // THE PROTOCOL</h2>
+                <p>From raw telemetry to clinical intervention.</p>
+            </div>
+            <div class="feature-matrix">
+                <div class="matrix-card">
+                    <i class="fa-solid fa-watch-fitness"></i>
+                    <h3>1. Aggregate</h3>
+                    <p>Your wearable seamlessly pushes high-frequency biometrics to our secure servers.</p>
+                </div>
+                <div class="matrix-card">
+                    <i class="fa-solid fa-user-doctor"></i>
+                    <h3>2. Analyze</h3>
+                    <p>Our sports scientists and MDs evaluate your kinetic and CNS load data.</p>
+                </div>
+                <div class="matrix-card">
+                    <i class="fa-solid fa-file-prescription"></i>
+                    <h3>3. Adapt</h3>
+                    <p>Receive weekly training modifications and recovery protocols directly to your dashboard.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="module-section reveal">
+            <div class="module-header center">
+                <h2>04 // SUBSCRIPTION TIERS</h2>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Amateur</h3>
+                    <div class="price">$49<span>/mo</span></div>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Automated Data Sync</li>
+                        <li><i class="fa-solid fa-check"></i> Basic Dashboard Access</li>
+                        <li><i class="fa-solid fa-check"></i> Monthly AI Report</li>
+                    </ul>
+                    <button class="btn-secondary">Start Trial</button>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="mini-tag blue">MOST POPULAR</div>
+                    <h3>Pro Athlete</h3>
+                    <div class="price">$199<span>/mo</span></div>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Real-time Telemetry</li>
+                        <li><i class="fa-solid fa-check"></i> Weekly MD Analysis</li>
+                        <li><i class="fa-solid fa-check"></i> Direct Messaging with Scientists</li>
+                    </ul>
+                    <button class="btn-primary">Select Pro</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2026 Athlete's Bridge Systems. Institutional Grade Performance Tracking.</p>
+    </footer>
+
+    <div class="ai-coach-widget collapsed"> <div class="coach-header">
+        <div class="coach-avatar"><i class="fa-solid fa-brain"></i></div>
+        <div>
+            <div class="coach-title">Neural Coach AI</div>
+            <div class="coach-status">Analyzing Telemetry...</div>
+        </div>
+        <button id="toggle-coach" class="icon-btn"><i class="fa-solid fa-chevron-up"></i></button> 
+    </div>
+    <div class="coach-messages" id="coach-messages">
+        <div class="message ai-msg">Telemetry sync established. Awaiting kinetic data to formulate recovery protocol.</div>
+    </div>
+    <div class="coach-input">
+        <input type="text" id="athlete-query" placeholder="Ask about your load...">
+        <button id="send-query"><i class="fa-solid fa-paper-plane"></i></button>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
